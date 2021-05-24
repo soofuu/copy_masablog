@@ -1,0 +1,623 @@
+html{
+    font-size:18px;
+    font-family:'Lato',"游ゴシック",sans-serif;
+    color:#505050;
+}
+body{
+    font-size:18px;
+    font-family:'Lato',"游ゴシック",sans-serif;
+    color:#505050;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    list-style: none;
+}
+/*header*/
+header{
+    display:flex;
+}
+.header-flame{
+    width:100%;
+    display:flex;
+    padding:1.2rem 2.5rem 1.2rem 1rem;
+    justify-content: space-between;
+}
+.header-title{
+    font-size:2.2rem;
+    font-weight: 400;
+}
+.header-title a{
+    color:#505050;
+}
+.header-lists{
+    display: flex;
+    margin: auto 0;
+}
+.header-list{
+    margin-left:2rem;
+}
+.header-list a{
+    color:#505050;
+    position: relative;
+}
+.header-list a:hover{
+    color: #828282;
+}
+.header-list a::after {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #A26C54;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform .3s;
+}
+.header-list a:hover::after {
+    transform: scale(1, 1);
+}
+/*バーガーメニュー*/
+.burger-btn{
+    display: none;
+}
+.burger-menue{
+    display: none;
+}
+/*main*/
+section{
+    margin-top: 4.8rem;
+}
+/*wrapper*/
+.wrapper{
+    width: 76%;
+    margin: 0 auto;
+}
+.section-title{
+    width: 100%;
+    font-size:2.2rem;
+    color:#a26c54;
+    font-weight: 500;
+    text-align: center;
+}
+.wrapper>p{
+    margin:3rem auto 0;
+    width: 350px;
+    text-align: center;
+    font-weight: 400;
+}
+/*fv*/
+#fv{
+    margin-top: 0;
+}
+.fv-background-img{
+    width:100%;
+    height:600px;
+    background-image: url(./img/keyboard.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:white;
+    
+}
+.fv-title{
+    text-align: center;
+    font-size:3.22rem;
+    font-weight:400;
+}
+.fv-background-img p{
+    margin: auto;
+    width: 350px;
+    text-align: center;
+    font-weight: 400;
+    margin: 5rem 0;
+}
+.fv-contact{
+    display: block;
+    margin:auto;
+    background-color: #a26c54;
+    text-align: center;
+    width:180px;
+    box-sizing: border-box;
+    padding:0.5rem;
+    border-radius: 10px;
+    
+}
+.fv-contact h3{
+    color:white;
+    font-size:1.22rem;
+    font-weight: 400;
+}
+/*about*/
+.about-item{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+.about-img{
+    width:49%;
+    height: 450px;
+    background-color:#D9D9D9;
+}
+.about-lists{
+    width:51%;
+    padding-left: 1.5rem;
+    box-sizing: border-box;
+}
+.about-lists li{
+    margin-bottom:2rem;
+}
+
+.about-item-title{
+    font-size:1.67rem;
+    font-weight: 400;
+    color:#a26c54;
+}
+.about-lists p{
+    font-weight: 400;
+    margin-top: 1.5rem;
+    line-height: 1.5rem;
+}
+/*works*/
+.work-items{
+    display:flex;
+    width:100%;
+    margin-top:3rem;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.margin-flame{
+    width: calc(100%/3);
+    padding: 0 0.6rem;
+    box-sizing: border-box;
+}
+.work-items .margin-flame{
+    min-width:300px;
+}
+.work-item{
+    display: block;
+    width:100%;
+    margin-bottom:1rem;
+    border:1px solid #D9D9D9;
+    align-items: center;
+    box-sizing: border-box;
+}
+.work-img{
+    display: block;
+    width:100%;
+    height:300px;
+    background-color: #D9D9D9;
+    margin: 0;
+}
+.work-item p{
+    padding:1rem;
+    color:black;
+}
+/*Service*/
+.service-items{
+    display:flex;
+    margin-top:3rem;
+}
+.service-item{
+    padding:1.5rem 0.5rem;
+    box-sizing: border-box;
+    border:1px solid #D9D9D9;
+}
+.service-item-title{
+    text-align: center;
+    font-size: 1.67rem;
+    font-weight: 400;
+    color:#a26c54;
+}
+.service-item p{
+    margin-top:1.5rem;
+}
+/*mySkill*/
+.myskill-background-img{
+    width:100%;
+    height: auto;
+    min-height: 450px;
+    padding:1rem 0;
+/*背景画像設定*/
+    background-image: url(./img/macbook.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+/*上下中央に*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(256,256,256,0.7);
+    position: relative;
+}
+    /*背景画像を暗くする*/
+.myskill-background-img::before{
+    content: "";
+    width:100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: 0.2;
+    box-sizing: border-box;
+}
+.myskill-item{
+    width:78%;
+    margin:auto;
+}
+.myskill-title{
+    display: block;
+    font-size: 3.33rem;
+    font-weight: 400;
+}
+.skill-lists{
+    display: flex;
+    flex-wrap:wrap;
+    margin-top: 3rem;
+    justify-content:center;
+}
+.skill-list{
+    display: block;
+    width:calc(100%/3);
+    min-width: 300px;
+    box-sizing: border-box;
+    padding-right: 3rem;
+    margin-bottom: 0.5rem;
+}
+.skill-name{
+    font-size: 1.67rem;
+    font-weight: 400;
+}
+.skill-list p{
+    margin-top: 1rem;
+}
+/*contact*/
+#contact{
+    margin-bottom: 5rem;
+}
+.contact-form{
+    display: block;
+    width: 50%;
+    margin:3rem auto 0;
+}
+.form-item{
+    width: 100%;
+    margin-top: 1rem;
+}
+.form-item input,.form-item textarea{
+    width:100%;
+    font-size: 1rem;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    border:1px solid #D9D9D9;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+}
+.contact-btn{
+    width:30%;
+    box-sizing: border-box;
+    margin: 1rem auto 0;
+}
+.contact-btn input{
+    width:100%;
+    padding: 0.5rem 0;
+    font-size: 1.375rem;
+    font-weight: 400;
+    letter-spacing: 0.5rem;
+    text-indent: 0.5rem;
+    text-align: center;
+    color:white;
+    background-color: #a26c54;
+    border-radius: 10px;
+    font-family:'Lato',"游ゴシック",sans-serif;
+    cursor: pointer;
+}
+
+/*footer*/
+footer{
+    width:100%;
+    background-color:#C6A394;
+}
+.footer-item{
+    width:30%;
+    margin: 0 auto;
+    color:white;
+    padding:2rem 0;
+    font-size:1em;
+}
+.footer-lists{
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+}
+.footer-lists li{
+    margin: 0 auto;
+}
+.footer-item>p{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/**/
+/*レスポンシブデザイン pad*/
+@media screen and (max-width: 1200px){
+    .wrapper{
+        width: 95%;
+        margin: 0 auto;
+    }
+    /*Service*/
+    .service-items .margin-flame{
+        width:100%;
+    }
+    .service-items{
+        margin-top:2rem;
+        flex-direction: column;
+    }
+    .service-item{
+        padding:1.7rem 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .service-items:last-child{
+        margin-bottom:0;
+    }
+    .service-item-title{
+        font-size: 1.875rem;
+    }
+    /*myskills*/
+    .myskill-item{
+        width:90%;
+    }
+    /*contact*/
+    .contact-form{
+        width:70%;
+        margin:2rem auto 0;
+    }
+}
+/*レスポンシブデザイン スマホ*/
+@media screen and (max-width: 760px){
+    html{
+        font-size:16px;
+    }
+    body{
+        font-size:16px;
+    }
+    /*header*/
+    .header-flame{
+        padding:1rem;
+        box-sizing: border-box;
+    }
+    .header-title{
+        font-size:1.56rem;
+        margin-left: 1.5rem;
+    }
+    .header-lists{
+        display: none;
+    }
+    /*バーガーメニューボタン*/
+    .burger-btn{
+        display:block;
+        width:2rem;
+        height: 1.2rem;
+        cursor: pointer;
+        z-index: 4;
+    }
+    .burger-btn-fixced{
+        position: fixed;
+        right: 1rem;
+    }
+    .bars{
+        height: 100%;
+        display: block;
+        position:relative;
+    }
+    .bar{
+        display: block;
+        width:1.8rem;
+        height:1.5px;
+        background-color: black;
+        position:absolute;
+        transition: all,0.5s;
+    }
+    .bar-top{
+        top:0px;
+        transform: translateY(-50%);
+    }
+    .bar-mid{
+        top:50%;
+        transform: translateY(-50%);
+    }
+    .bar-bottom{
+        bottom:0;
+        transform: translateY(-50%);
+    }
+        /*close-btnに変更*/
+    .close-top{
+        top:50%;
+        transform: rotate(0.125turn);
+    }
+    .close-mid{
+        display: none;
+    }
+    .close-bottom{
+        top:50%;
+        transform: rotate(0.375turn);
+    }
+        /*バーガーメニュー*/
+    .burger-menue{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 3;
+    }
+    .fixed-flame{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(256,256,256,0.7);
+        z-index: 3;
+    }
+    .burger-lists{
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+    .burger-lists a{
+        font-weight: 700;
+        font-size: 2rem;
+        color:black;
+        transition: color,0.5s;
+    }
+    .burger-list{
+        text-align: center;
+        margin: 2.5rem 0;
+    }
+    .burger-lists a:hover{
+        color: white;
+    }
+    
+    /*wrapper*/
+    .wrapper{
+        width: 93%;
+        box-sizing: border-box;
+    }
+    .section-title{
+        width: 100%;
+        font-size:2.5rem;
+        color:#a26c54;
+    }
+    .wrapper>p{
+        margin:2.5rem auto 0;
+        width: 350px;
+    }
+    /*fv*/
+    .fv-background-img{
+        width:100%;
+        height:400px;
+        box-sizing: border-box;
+    }
+    .fv-title{
+        font-size:2.5rem;
+    }
+    .fv-background-img p{
+        width: 350px;
+        margin: 3.5rem 0;
+    }
+    .fv-contact{
+        width:180px;
+        padding:1rem;
+    }
+    .fv-contact h3{
+        font-size:1.375rem;
+    }
+    /*About*/
+    .about-item{
+        display:flex;
+        margin-top: 2rem;
+        flex-direction: column;
+    }
+    .about-img{
+        width:100%;
+        background-color:#D9D9D9;
+    }
+    .about-lists{
+        width:100%;
+        padding-left:0;
+        margin-top:1.5rem;
+    }
+    .about-lists li{
+        margin-bottom:3rem;
+    }
+    .about-item-title{
+        font-size:1.875rem;
+    }
+    .about-lists p{
+        font-weight: 400;
+        margin-top:2rem;
+    }
+    .about-lists li:last-child{
+        margin-bottom:0;
+    }
+    /*Works*/
+    .work-items{
+        display:flex;
+        margin-top:3rem;
+        flex-direction: column;
+    }
+    .margin-flame{
+        width: 100%;
+    }
+    .work-img{
+        height:180px;
+    }
+    .work-item p{
+        padding:1rem;
+        color:black;
+    }
+    .last-item{
+        margin-bottom: 0;
+    }
+    /*Myskills*/
+    .myskill-background-img{
+        height: 960px;
+    }
+    .myskill-item{
+        width:86%;
+    }
+    .myskill-title{
+        font-size: 3.75rem;
+    }
+    .skill-lists{
+        flex-direction: column;
+        margin-top: 4rem;
+    }
+    .skill-list{
+        width:100%;
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+    .skill-name{
+        font-size: 1.875rem;
+    }
+    .skill-list p{
+        margin-top: 1.5rem;
+    }
+    /*Contact*/
+    .contact-form{
+        width:95%;
+        margin:2rem auto 0;
+    }
+    .form-item{
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .contact-btn{
+        width:40%;
+        margin: 1.5rem auto 0;
+    }
+    .contact-btn input{
+        letter-spacing: 0.3rem;
+    }
+    /*footer*/
+    footer{
+        width:100%;
+        background-color:#C6A394;
+        
+    }
+    .footer-item{
+        width:90%;
+        padding:2.5rem 0;
+    }
+}
